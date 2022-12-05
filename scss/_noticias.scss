@@ -1,0 +1,19 @@
+/* estilos apartado noticias */
+@import "mixin";
+main{
+    .noticias{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        align-items: center;
+        .noticia1{
+            @include estilosNoticias;
+        }
+        .noticia2{
+            @include estilosNoticias;
+        }
+        .noticia3{
+            @include estilosNoticias;
+        }
+    }
+}

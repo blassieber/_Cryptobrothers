@@ -1,0 +1,25 @@
+/* estilos apartado objetivos*/
+.presentacion{
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(164, 160, 201) ;
+    padding: 10px;
+}
+.contenedor{
+    height: 100vh;
+    background-color:rgb(164, 160, 201) ;
+    .copytrading{
+        h2{
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-shadow: 2px 2px 2px rgb(77, 71, 71);
+            padding-top: 10px;
+        }
+        h3{
+            margin-left: 10px;
+            padding-top: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+        }
+    }
+}

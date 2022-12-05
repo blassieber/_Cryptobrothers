@@ -1,0 +1,19 @@
+// mixin con parametros
+@import "variables";
+@mixin noticias($display, $align, $padding, $gap, $color){
+    display: $display;
+    align-items: $align;
+    padding: $padding;
+    gap: $gap;
+    background-color: $color;
+}
+
+
+// mixin sin parametros
+@mixin estilosNoticias{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    background-color:$color-fondo;
+}

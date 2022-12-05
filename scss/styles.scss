@@ -1,0 +1,54 @@
+/* reset */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//nesting
+@import "variables";
+/* estilos de header*/
+
+header{
+    h1{
+        color: whitesmoke;
+        background-color: $color-fondo;
+        font-size: 40px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: italic;
+    }
+    nav{
+        .container-fluid{
+            .collapse{
+                ul{
+                    list-style-type: none;
+                    li{
+                        &:hover{transform: scale3d(1.2,1.2,1.2);}
+                    }
+                }
+            }
+        }
+    }
+}
+
+@import "index";
+
+/* estilos de footer */
+
+footer{
+    background-color: rgb(95, 95, 187);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+@import "noticias";
+@import "contacto";
+@import "objetivos";
+@import "quienessomos";
