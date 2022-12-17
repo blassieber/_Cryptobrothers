@@ -11,20 +11,18 @@
 /* estilos de header*/
 
 header{
-    h1{
-        color: whitesmoke;
-        background-color: $color-fondo;
-        font-size: 40px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-style: italic;
-    }
+    background-color: $color-fondo;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
     nav{
         .container-fluid{
             .collapse{
                 ul{
                     list-style-type: none;
                     li{
-                        &:hover{transform: scale3d(1.2,1.2,1.2);}
+                        &:hover{transform: scale3d(1.1,1.1,1.1);}
                     }
                 }
             }

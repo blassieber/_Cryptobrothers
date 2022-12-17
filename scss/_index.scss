@@ -1,26 +1,63 @@
 /* estilos de index*/
-main{
-    .index{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-template-areas: "plataforma ganancias"
-        "plataforma ganancias-img";
+.main-index{
+    .primer-set{
+        padding-left: 20vh;
+        padding-top: 40px;
+        padding-bottom: 20vh;
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-items: center;
+        color: white;
+        
+        justify-content: center;
+        .titulo1, .titulo2{
+            text-transform: uppercase;
+        }
+        .titulo2{
+            color: gold;
+            font-style: oblique;
+            font-size: 50px;
+        }
+    }
         background-color: rgb(111, 128, 175);
         background-image:url(../img/915234.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 1000px;
-        .plataforma{
-            grid-area: plataforma;
+        height: 100vh;
+    .segundo-set{
+        padding: 5vh 30vh 5vh 15vh;
+        background-color: rgb(36, 33, 33);
+        display: flex;
+        flex-direction: column;
+            h2{
+                color: gold;
+            }
+            span{
+                color: whitesmoke;
+                padding-bottom: 2vh;
+            }
+            .boton{
+                padding: 5px 0 5px 0;
+                margin: 0 0 0 10vw;
+                width: 70px;
+                border-radius: 10px;
+                text-align: center;
+                text-transform: uppercase;
+                background-color: rgb(204, 178, 32);
+                color: white;
+                border: 5px;
+                font-size: large;
+                &:hover{transform: scale3d(1.1,1.1,1.1)};
+                text-decoration: none;
+            }
         }
-        .ganancias{
-            grid-area: ganancias;
-        }
-        .ganancias-img{
-            grid-area: ganancias-img;
+        @media (max-width: 720px) {
+            .primer-set{
+                padding: 5vh 0 5vh 0;
+            }
+            .segundo-set{
+                padding: 0 0 0 0;
+            }
+            height: 100vh;
         }
     }
-}

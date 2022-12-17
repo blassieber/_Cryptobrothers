@@ -1,25 +1,56 @@
 /* estilos apartado objetivos*/
-.presentacion{
-    font-size: larger;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgb(164, 160, 201) ;
-    padding: 10px;
-}
 .contenedor{
-    height: 100vh;
-    background-color:rgb(164, 160, 201) ;
-    .copytrading{
-        h2{
-            text-align: center;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            text-shadow: 2px 2px 2px rgb(77, 71, 71);
-            padding-top: 10px;
+    background-image: url(../img/bitcoin-desintegracion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    .presentacion{
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 10px;
+        border: 1px solid gray;
+        margin-top: 10px;
+        width: 50vw;
+        padding: 1vh 1vh 1vh 1vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20vw;
+        h1,p{
+            color: black;
         }
-        h3{
-            margin-left: 10px;
-            padding-top: 30px;
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            font-style: italic;
+        h1{
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+    }
+
+    .copytrading{
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 10px;
+        border: 1px solid gray;
+        margin-top: 10px;
+        width: 50vw;
+        padding: 1vh 1vh 1vh 1vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 20vw;
+        margin-bottom: 5vh;
+        .tiposdecopy{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            h2{
+                text-shadow: 2px 2px 2px rgb(77, 71, 71);
+                padding-top: 10px;
+            }
+            h3{
+                padding-top: 30px;
+                font-style: italic;
+            }
         }
     }
 }

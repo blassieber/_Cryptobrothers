@@ -5,37 +5,69 @@
   box-sizing: border-box; }
 
 /* estilos de header*/
-header h1 {
-  color: whitesmoke;
+header {
   background-color: #9ea6f3;
-  font-size: 40px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-style: italic; }
-
-header nav .container-fluid .collapse ul {
-  list-style-type: none; }
-  header nav .container-fluid .collapse ul li:hover {
-    transform: scale3d(1.2, 1.2, 1.2); }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  header nav .container-fluid .collapse ul {
+    list-style-type: none; }
+    header nav .container-fluid .collapse ul li:hover {
+      transform: scale3d(1.1, 1.1, 1.1); }
 
 /* estilos de index*/
-main .index {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-template-areas: "plataforma ganancias" "plataforma ganancias-img";
-  align-items: center;
-  justify-items: center;
+.main-index {
   background-color: #6f80af;
   background-image: url(../img/915234.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1000px; }
-  main .index .plataforma {
-    grid-area: plataforma; }
-  main .index .ganancias {
-    grid-area: ganancias; }
-  main .index .ganancias-img {
-    grid-area: ganancias-img; }
+  height: 100vh; }
+  .main-index .primer-set {
+    padding-left: 20vh;
+    padding-top: 40px;
+    padding-bottom: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center; }
+    .main-index .primer-set .titulo1, .main-index .primer-set .titulo2 {
+      text-transform: uppercase; }
+    .main-index .primer-set .titulo2 {
+      color: gold;
+      font-style: oblique;
+      font-size: 50px; }
+  .main-index .segundo-set {
+    padding: 5vh 30vh 5vh 15vh;
+    background-color: #242121;
+    display: flex;
+    flex-direction: column; }
+    .main-index .segundo-set h2 {
+      color: gold; }
+    .main-index .segundo-set span {
+      color: whitesmoke;
+      padding-bottom: 2vh; }
+    .main-index .segundo-set .boton {
+      padding: 5px 0 5px 0;
+      margin: 0 0 0 10vw;
+      width: 70px;
+      border-radius: 10px;
+      text-align: center;
+      text-transform: uppercase;
+      background-color: #ccb220;
+      color: white;
+      border: 5px;
+      font-size: large;
+      text-decoration: none; }
+      .main-index .segundo-set .boton:hover {
+        transform: scale3d(1.1, 1.1, 1.1); }
+  @media (max-width: 720px) {
+    .main-index {
+      height: 100vh; }
+      .main-index .primer-set {
+        padding: 5vh 0 5vh 0; }
+      .main-index .segundo-set {
+        padding: 0 0 0 0; } }
 
 /* estilos de footer */
 footer {
@@ -51,6 +83,9 @@ footer {
 
 /* estilos apartado noticias */
 main .noticias {
+  background-image: url(../img/915234.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   width: auto;
@@ -59,52 +94,177 @@ main .noticias {
     display: flex;
     align-items: center;
     padding: 20px;
-    gap: 10px;
-    background-color: #9ea6f3; }
+    gap: 10px; }
+    main .noticias .noticia1 .articulo1 {
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 10px;
+      border: 1px solid gray;
+      padding: 1vh 1vh 1vh 1vh; }
   main .noticias .noticia2 {
     display: flex;
     align-items: center;
     padding: 20px;
-    gap: 10px;
-    background-color: #9ea6f3; }
+    gap: 10px; }
+    main .noticias .noticia2 .articulo2 {
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 10px;
+      border: 1px solid gray;
+      padding: 1vh 1vh 1vh 1vh; }
   main .noticias .noticia3 {
     display: flex;
     align-items: center;
     padding: 20px;
-    gap: 10px;
-    background-color: #9ea6f3; }
+    gap: 10px; }
+    main .noticias .noticia3 .articulo3 {
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 10px;
+      border: 1px solid gray;
+      padding: 1vh 1vh 1vh 1vh; }
+  @media (min-width: 425px) and (max-width: 768px) {
+    main .noticias .noticia1 {
+      display: flex;
+      flex-direction: column; }
+    main .noticias .noticia2 {
+      display: flex;
+      flex-direction: column; }
+    main .noticias .noticia3 {
+      display: flex;
+      flex-direction: column; } }
+  @media (max-width: 425px) {
+    main .noticias .noticia1 {
+      padding: 1vh 1vh 1vh 1vh; }
+      main .noticias .noticia1 .imagen1 {
+        display: none; }
+    main .noticias .noticia2 {
+      padding: 1vh 1vh 1vh 1vh; }
+      main .noticias .noticia2 .imagen2 {
+        display: none; }
+    main .noticias .noticia3 {
+      padding: 1vh 1vh 1vh 1vh; }
+      main .noticias .noticia3 .imagen3 {
+        display: none; } }
 
 /* estilos de contacto */
 .contenedor2 {
   height: 100vh;
-  background-color: #a4a0c9; }
+  background-image: url(../img/bitcoin-desintegracion.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .contenedor2 .contacto {
+    margin-top: 10rem;
+    padding: 2vh 2vh 2vh 2vh;
+    background-color: white;
+    width: auto;
+    height: auto; }
+    .contenedor2 .contacto form {
+      opacity: 0.6; }
+      .contenedor2 .contacto form fieldset {
+        display: flex;
+        flex-direction: column; }
+        .contenedor2 .contacto form fieldset h1 {
+          text-align: center;
+          text-transform: uppercase;
+          color: #e9cd2c;
+          font-size: 30px; }
+        .contenedor2 .contacto form fieldset .formulario {
+          display: flex;
+          flex-direction: row; }
+          .contenedor2 .contacto form fieldset .formulario .formulario-2 div {
+            margin: 1vh 1vh 1vh 1vh; }
+          .contenedor2 .contacto form fieldset .formulario .formulario-redes {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            margin-left: 1vh;
+            color: #cab22c;
+            font-size: large; }
+    @media (min-width: 768px) and (max-width: 1440px) {
+      .contenedor2 .contacto {
+        padding: 1vh 1vh 1vh 1vh; } }
+    @media (max-width: 768px) {
+      .contenedor2 .contacto form fieldset .formulario .formulario-redes {
+        display: none; } }
 
 /* estilos apartado objetivos*/
-.presentacion {
-  font-size: larger;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color: #a4a0c9;
-  padding: 10px; }
-
 .contenedor {
-  height: 100vh;
-  background-color: #a4a0c9; }
-  .contenedor .copytrading h2 {
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-shadow: 2px 2px 2px #4d4747;
-    padding-top: 10px; }
-  .contenedor .copytrading h3 {
-    margin-left: 10px;
-    padding-top: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: italic; }
+  background-image: url(../img/bitcoin-desintegracion.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto; }
+  .contenedor .presentacion {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin-top: 10px;
+    width: 50vw;
+    padding: 1vh 1vh 1vh 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20vw; }
+    .contenedor .presentacion h1, .contenedor .presentacion p {
+      color: black; }
+    .contenedor .presentacion h1 {
+      text-transform: uppercase;
+      font-size: 30px; }
+  .contenedor .copytrading {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin-top: 10px;
+    width: 50vw;
+    padding: 1vh 1vh 1vh 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20vw;
+    margin-bottom: 5vh; }
+    .contenedor .copytrading .tiposdecopy {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+      .contenedor .copytrading .tiposdecopy h2 {
+        text-shadow: 2px 2px 2px #4d4747;
+        padding-top: 10px; }
+      .contenedor .copytrading .tiposdecopy h3 {
+        padding-top: 30px;
+        font-style: italic; }
 
 /* estilo apartado quienes somos*/
-.quienessomos .quienessomos1 {
-  text-align: center;
-  background-color: #a4a0c9;
-  font-size: large;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  padding-top: 40px;
+.quienessomos {
+  background-image: url(../img/bitcoin-desintegracion.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 100vh; }
+  .quienessomos .quienessomos1 {
+    margin-top: 20px;
+    margin-right: 45vw;
+    padding: 2vh 2vh 2vh 2vh;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    border: 1px solid gray; }
+    .quienessomos .quienessomos1 h1 {
+      text-transform: uppercase;
+      opacity: none;
+      color: black; }
+    .quienessomos .quienessomos1 p {
+      opacity: none;
+      color: black; }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .quienessomos {
+      height: 110vh; } }
+  @media (max-width: 768px) {
+    .quienessomos .quienessomos1 {
+      margin-right: 4vw;
+      padding: 1vh 1vh 1vh 1vh; } }
