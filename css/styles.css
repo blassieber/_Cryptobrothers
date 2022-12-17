@@ -146,7 +146,7 @@ main .noticias {
 
 /* estilos de contacto */
 .contenedor2 {
-  height: 100vh;
+  height: auto;
   background-image: url(../img/bitcoin-desintegracion.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -154,7 +154,9 @@ main .noticias {
   flex-direction: column;
   align-items: center; }
   .contenedor2 .contacto {
+    height: 100vh;
     margin-top: 10rem;
+    margin-bottom: 10rem;
     padding: 2vh 2vh 2vh 2vh;
     background-color: white;
     width: auto;
@@ -245,7 +247,7 @@ main .noticias {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh; }
+  height: auto; }
   .quienessomos .quienessomos1 {
     margin-top: 20px;
     margin-right: 45vw;
@@ -253,7 +255,8 @@ main .noticias {
     width: 350px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
-    border: 1px solid gray; }
+    border: 1px solid gray;
+    margin-bottom: 3vh; }
     .quienessomos .quienessomos1 h1 {
       text-transform: uppercase;
       opacity: none;
@@ -263,7 +266,7 @@ main .noticias {
       color: black; }
   @media (min-width: 768px) and (max-width: 1024px) {
     .quienessomos {
-      height: 110vh; } }
+      height: auto; } }
   @media (max-width: 768px) {
     .quienessomos .quienessomos1 {
       margin-right: 4vw;

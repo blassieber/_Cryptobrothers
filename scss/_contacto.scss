@@ -1,6 +1,6 @@
 /* estilos de contacto */
 .contenedor2{
-    height: 100vh;
+    height: auto;
     background-image: url(../img/bitcoin-desintegracion.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,7 +8,9 @@
     flex-direction: column;
     align-items: center;
     .contacto{
+        height: 100vh;
         margin-top: 10rem;
+        margin-bottom: 10rem;
         padding: 2vh 2vh 2vh 2vh;
         background-color: white;
         width: auto;
